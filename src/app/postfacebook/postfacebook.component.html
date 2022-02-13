@@ -1,0 +1,42 @@
+<div class="post">
+    <div class="headerpost">
+        <div class="panelname">
+            <img src="../../assets/image.jpg" alt="" class="logo" >
+            <div class="panelnametime">
+                <h3 class="name">Houssam eddine sehlaoui</h3>
+                <p class="time">23h</p>
+            </div>
+        </div>
+        <div class="panelcontrol">...</div>
+    </div>
+    <p class="txtPost">🇷🇺 v 🇪🇸 | Could you ask for any more from a game of rugby than this! 
+        Well played to both teams for contributing to one to remember.</p>
+    <img src="../../assets/image.jpg" alt="" class="imageposts">
+
+
+    <div class="panelstat" *ngIf="countLike>0 || countComent>0 || countShare>0" >
+        <p class="likestat" *ngIf="countLike>0">{{countLike}}</p>
+        <div class="coment-share">
+            <p class="coment" *ngIf="countComent>0">{{countComent}} Commentaires</p>
+            <p class="coment" *ngIf="countShare>0">{{countShare}} partagers</p>
+        </div>
+    </div>
+
+
+    <div class="interaction">
+        <div class="btn-like" (click)="onClickLike()">
+            <img src="../../assets/image.jpg" alt="" class="like">
+            <p class="likeLabel">J'aime</p>
+        </div>
+
+        <div class="btn-like" (click)="onClickComent()">
+            <img src="../../assets/image.jpg" alt="" class="like">
+            <p class="likeLabel">Commenter</p>
+        </div>
+
+        <div class="btn-like" (click)="onClickShare()">
+            <img src="../../assets/image.jpg" alt="" class="like">
+            <p class="likeLabel">Partager</p>
+        </div>
+    </div>
+</div>

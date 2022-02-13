@@ -1,0 +1,114 @@
+.post {
+  width: 500px;
+  background-color: rgb(70, 70, 70);
+  border-radius: 4px;
+  margin: auto;
+}
+
+.headerpost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.panelname {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 8px;
+}
+.panelnametime {
+  margin-left: 10px;
+}
+.name {
+  color: #ffff;
+  cursor: pointer;
+}
+.time {
+  margin-top: -22px;
+  color: rgb(160, 158, 158);
+  cursor: default;
+}
+.panelcontrol {
+  color: #ffff;
+  text-align: center;
+  margin: 7px;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s all;
+}
+
+.panelcontrol:hover {
+  background-color: rgb(107, 107, 107);
+}
+.txtPost {
+  color: #ffff;
+  margin-left: 15px;
+  width: 97%;
+}
+.imageposts {
+  width: 100%;
+  height: 50vh;
+  cursor: pointer;
+}
+
+.interaction {
+  display: flex;
+  justify-content: space-around;
+}
+.btn-like {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 45%;
+  height: 45px;
+  margin: 2px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+.btn-like:hover {
+  background-color: rgb(88, 88, 88);
+}
+
+.like {
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+}
+.likeLabel {
+  color: rgb(179, 179, 179);
+}
+
+.panelstat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+}
+
+.likestat {
+  margin: 10px;
+  color: rgb(155, 155, 155);
+}
+.coment-share {
+  display: flex;
+  align-items: center;
+}
+.coment {
+  margin-right: 10px;
+  color: rgb(155, 155, 155);
+  transition: all 2s;
+  cursor: pointer;
+}
+
+.coment:hover {
+  text-decoration: underline;
+}
