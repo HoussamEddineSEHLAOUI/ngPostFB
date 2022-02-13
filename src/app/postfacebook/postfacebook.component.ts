@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input } from '@angular/core';
 
 @Component({
   selector: 'app-postfacebook',
@@ -9,6 +9,8 @@ export class PostfacebookComponent implements OnInit {
   countLike :number =0;
   countComent: number = 0;
   countShare:number =0;
+  controlPost : boolean =false ;
+  @Input() title: string ='';
 
   constructor() { }
 
@@ -25,5 +27,9 @@ export class PostfacebookComponent implements OnInit {
 
   onClickShare =()=>{
     this.countShare ++ ;
+  }
+  
+  setShowControl=(val:boolean)=>{
+    this.controlPost=val;
   }
 }

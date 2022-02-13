@@ -1,4 +1,4 @@
-<div class="post">
+<div class="post" >
     <div class="headerpost">
         <div class="panelname">
             <img src="../../assets/image.jpg" alt="" class="logo" >
@@ -7,7 +7,8 @@
                 <p class="time">23h</p>
             </div>
         </div>
-        <div class="panelcontrol">...</div>
+        <div class="panelcontrol" (click)="setShowControl(!controlPost)">...</div>
+        <div class="control" *ngIf="controlPost">{{title}}</div>
     </div>
     <p class="txtPost">🇷🇺 v 🇪🇸 | Could you ask for any more from a game of rugby than this! 
         Well played to both teams for contributing to one to remember.</p>
